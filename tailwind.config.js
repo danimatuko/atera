@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        pink: "#FF176B",
+        atera: "#FF176B",
         gold: "#D1AD78",
       },
       fontFamily: {
