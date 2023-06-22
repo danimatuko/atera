@@ -8,16 +8,10 @@ body {
 }
 
 .slider-container {
-  width: 75%;
+  /* width: 85%; */
   margin: auto;
 }
 
-/* .slides {
-  display: flex;
-  overflow: scroll;
-} */
-
-.slide {
-  min-width: 100%;
-  height: 200px;
+.active {
+  background-color: #d1ad78;
 }

@@ -42,8 +42,8 @@
             <span>30-day free trial</span>
           </li>
         </ul>
-
-        <div class="flex flex-col items-center">
+        <!-- CTA -->
+        <div class="flex flex-col items-center mb-16">
           <button
             class="bg-pink px-5 py-2 rounded-lg text-white text-sm w-full mb-1 font-semibold"
           >
@@ -54,20 +54,45 @@
       </div>
 
       <!-- slider-container -->
-      <div class="slider-container">
-        <!-- slider -->
-        <div class="slider m-auto">
-          <div class="slides flex">
-            <div class="slide bg-blue-300">1</div>
-            <div class="slide bg-red-300">2</div>
-            <div class="slide bg-green-300">3</div>
+      <div class="container mx-auto px-4">
+        <div class="slider-container overflow-hidden">
+          <!-- slider -->
+          <div class="slider m-auto ease-in duration-300 relative">
+            <div class="slides flex mb-2">
+              <div class="slide min-w-full">
+                <picture>
+                  <img
+                    src="src\assets\dashboards\dashboard-3.png"
+                    alt="dashboard"
+                  />
+                </picture>
+              </div>
+              <div class="slide min-w-full">
+                <picture>
+                  <img
+                    src="src\assets\dashboards\dashboard-3.png"
+                    alt="dashboard"
+                  />
+                </picture>
+              </div>
+              <div class="slide min-w-full">
+                <picture>
+                  <img
+                    src="src\assets\dashboards\dashboard-3.png"
+                    alt="dashboard"
+                  />
+                </picture>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- dots -->
-        <div class="dots m-auto text-center">
-          <button class="w-4 h-4 rounded-full bg-gray-400 text-xs">1</button>
-          <button class="w-4 h-4 rounded-full bg-gray-400 text-xs">2</button>
-          <button class="w-4 h-4 rounded-full bg-gray-400 text-xs">3</button>
+          <!-- dots -->
+          <div class="dots m-auto text-center">
+            <button
+              class="w-3 h-3 rounded-full bg-gray-400 text-xs active"
+            ></button>
+            <button class="w-3 h-3 rounded-full bg-gray-400 text-xs"></button>
+            <button class="w-3 h-3 rounded-full bg-gray-400 text-xs"></button>
+          </div>
         </div>
       </div>
     </main>
