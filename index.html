@@ -7,7 +7,7 @@
     <link href="/dist/style.css" rel="stylesheet" />
   </head>
   <body class="font-roboto">
-    <header>
+    <header class="lg:hidden">
       <img
         src="src/assets/atera-logo.svg"
         alt="Atera Logo"
@@ -15,121 +15,167 @@
       />
     </header>
     <main class="py-5">
-      <div class="container mx-auto px-4 md:text-center">
-        <h1 class="text-5xl font-bold mb-5">
-          Join the new era of I.T. with Atera
-        </h1>
-        
-        <div class="benefits m-auto md:w-1/2 md:px-5">
-          <p class="mb-2">With our all in one I.T platform you get:</p>
-          <ul class="mb-5 m-auto">
-            <li class="flex items-center md:float-left md:mr-3">
-              <div class="w-3 h-3 rounded-full bg-gold mr-4"></div>
-              <!-- Bullet marker -->
-              <span>Monitor unlimited devices</span>
-            </li>
-            <li class="flex items-center">
-              <div class="w-3 h-3 rounded-full bg-gold mr-4"></div>
-              <!-- Bullet marker -->
-              <span>Fixed price</span>
-            </li>
-            <li class="flex items-center  md:float-left md:mr-3">
-              <div class="w-3 h-3 rounded-full bg-gold mr-4"></div>
-              <!-- Bullet marker -->
-              <span>5-minute onboarding</span>
-            </li>
-            <li class="flex items-center">
-              <div class="w-3 h-3 rounded-full bg-gold mr-4"></div>
-              <!-- Bullet marker -->
-              <span>30-day free trial</span>
-            </li>
-          </ul>
-          <!-- CTA -->
-          <div class="flex flex-col items-center mb-16">
-            <button
-              class="bg-pink w-full  md:w-auto px-10 md:px py-3 rounded-lg text-white text-sm  mb-1 font-semibold"
-            >
-              start free trail
-            </button>
-            <p class="text-xs text-gray-500">No credit card required</p>
+      <div
+        class="layout container mx-auto lg:h-screen lg:px-4 flex flex-col lg:flex-row justify-center items-center"
+      >
+        <!-- Intro Area -->
+        <div
+          class="container mx-auto px-4 md:text-center lg:text-left lg:text-lg"
+        >
+          <div class="hidden lg:block">
+            <img
+              src="src/assets/atera-logo.svg"
+              alt="Atera Logo"
+              class="py-5 mb-5 w-32 xl:w-44"
+            />
           </div>
-        </div>
-      </div>
+          <h1 class="text-5xl xl:text-6xl font-bold mb-5 lg:mb-8 xl:w-3/4">
+            Join the new era of I.T. with Atera
+          </h1>
 
-      <!-- slider-container -->
-      <section class="container mx-auto px-4 md:px-8">
-        <div class="slider-container overflow-hidden">
-          <!-- slider -->
-          <div class="slider m-auto ease-in duration-300 relative">
-            <div class="slides flex mb-2">
-          <!-- Slide -->
-              <div class="slide min-w-full">
-                <picture>
-                  <source media="(min-width:1024px)" srcset="src\assets\dashboards\dashboard-1.png">
-                  <source media="(min-width:768px)" srcset="src\assets\dashboards\dashboard-2.png">
-
-                  <img
-                    src="src\assets\dashboards\dashboard-3.png"
-                    alt="dashboard"
-                  />
-                  
-                </picture>
-              </div>
-              <!-- Slide -->
-              <div class="slide min-w-full">
-                <picture>
-                  <source media="(min-width:1024px)" srcset="src\assets\dashboards\dashboard-1.png">
-                  <source media="(min-width:768px)" srcset="src\assets\dashboards\dashboard-2.png">
-
-                  <img
-                    src="src\assets\dashboards\dashboard-3.png"
-                    alt="dashboard"
-                  />
-                  
-                </picture>
-              </div>     <!-- Slide -->
-              <div class="slide min-w-full">
-                <picture>
-                  <source media="(min-width:1024px)" srcset="src\assets\dashboards\dashboard-1.png">
-                  <source media="(min-width:768px)" srcset="src\assets\dashboards\dashboard-2.png">
-
-                  <img
-                    src="src\assets\dashboards\dashboard-3.png"
-                    alt="dashboard"
-                  />
-                  
-                </picture>
-              </div>
-       
+          <div class="benefits m-auto md:w-1/2 lg:w-full md:px-5 xl:text-2xl">
+            <p class="mb-2">With our all in one I.T platform you get:</p>
+            <ul class="mb-5 lg:mb-10 m-auto">
+              <li class="flex items-center md:float-left md:mr-3">
+                <div class="w-3 h-3 rounded-full bg-gold mr-4"></div>
+                <!-- Bullet marker -->
+                <span>Monitor unlimited devices</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-3 h-3 rounded-full bg-gold mr-4"></div>
+                <!-- Bullet marker -->
+                <span>Fixed price</span>
+              </li>
+              <li class="flex items-center md:float-left md:mr-3">
+                <div class="w-3 h-3 rounded-full bg-gold mr-4"></div>
+                <!-- Bullet marker -->
+                <span>5-minute onboarding</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-3 h-3 rounded-full bg-gold mr-4"></div>
+                <!-- Bullet marker -->
+                <span>30-day free trial</span>
+              </li>
+            </ul>
+            <!-- CTA -->
+            <div class="flex flex-col items-center mb-16 lg:items-start">
+              <button
+                class="bg-pink w-full md:w-auto px-10 md:px py-3 rounded-lg text-white text-sm mb-1 font-semibold lg:text-lg"
+              >
+                start free trail
+              </button>
+              <p class="text-xs lg:text-sm text-gray-500 lg:px-5">
+                No credit card required
+              </p>
             </div>
           </div>
         </div>
+
+        <!-- Slider Area -->
+        <div class="flex flex-col justify-center items-center">
+          <!-- slider-container -->
+          <section class="container mx-auto px-4 md:px-8">
+            <div class="slider-container overflow-hidden">
+              <!-- slider -->
+              <div class="slider m-auto ease-in duration-300 relative">
+                <div class="slides flex mb-2">
+                  <!-- Slide -->
+                  <div class="slide min-w-full">
+                    <picture>
+                      <source
+                        media="(min-width:1280px)"
+                        srcset="
+                          src/assets/dashboards/x2-images/dashboard-1-x2.png
+                        "
+                      />
+                      <source
+                        media="(min-width:1024px)"
+                        srcset="
+                          src/assets/dashboards/x2-images/dashboard-3-x2.png
+                        "
+                      />
+                      <source
+                        media="(min-width:768px)"
+                        srcset="src\assets\dashboards\dashboard-2.png"
+                      />
+
+                      <img
+                        src="src\assets\dashboards\dashboard-3.png"
+                        alt="dashboard"
+                      />
+                    </picture>
+                  </div>
+                  <!-- Slide -->
+                  <div class="slide min-w-full">
+                    <picture>
+                      <source
+                        media="(min-width:1024px)"
+                        srcset="src\assets\dashboards\dashboard-1.png"
+                      />
+                      <source
+                        media="(min-width:768px)"
+                        srcset="src\assets\dashboards\dashboard-2.png"
+                      />
+
+                      <img
+                        src="src\assets\dashboards\dashboard-3.png"
+                        alt="dashboard"
+                      />
+                    </picture>
+                  </div>
+                  <!-- Slide -->
+                  <div class="slide min-w-full">
+                    <picture>
+                      <source
+                        media="(min-width:1024px)"
+                        srcset="src\assets\dashboards\dashboard-1.png"
+                      />
+                      <source
+                        media="(min-width:768px)"
+                        srcset="src\assets\dashboards\dashboard-2.png"
+                      />
+
+                      <img
+                        src="src\assets\dashboards\dashboard-3.png"
+                        alt="dashboard"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- dots -->
             <div class="dots m-auto text-center mb-6">
-              <button class="w-3 h-3 rounded-full bg-gray-400 text-xs active"></button>
+              <button
+                class="w-3 h-3 rounded-full bg-gray-400 text-xs active"
+              ></button>
               <button class="w-3 h-3 rounded-full bg-gray-400 text-xs"></button>
               <button class="w-3 h-3 rounded-full bg-gray-400 text-xs"></button>
             </div>
-      </section>
-      
+          </section>
+
           <!-- OS logos -->
           <section class="container mx-auto px-4">
             <div class="flex justify-center items-center gap-x-4 mb-3">
               <img src="src/assets/badges/os-1.svg" class="w-12" alt="" />
               <img src="src/assets/badges/os-2.svg" class="w-12" alt="" />
-              <img src="src/assets/badges/os-3.svg" class="w-12" alt="" />             
-               <div class="w-[1px] h-16 bg-black hidden md:block"></div>
-              <img src="src/assets/badges/2023.svg" class="w-14 mt-2 hidden md:block" alt="" />
-
+              <img src="src/assets/badges/os-3.svg" class="w-12" alt="" />
+              <div class="w-[1px] h-16 bg-black hidden md:block"></div>
+              <img
+                src="src/assets/badges/2023.svg"
+                class="w-14 mt-2 hidden md:block"
+                alt=""
+              />
             </div>
-            <div class="flex flex-col justify-center items-center gap-x-4 md:hidden">
+            <div
+              class="flex flex-col justify-center items-center gap-x-4 md:hidden"
+            >
               <div class="w-full h-[1px] bg-black"></div>
               <img src="src/assets/badges/2023.svg" class="w-14 mt-2" alt="" />
             </div>
           </section>
         </div>
       </div>
-      
     </main>
 
     <script src="src/main.js"></script>
