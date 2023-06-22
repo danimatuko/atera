@@ -39,3 +39,25 @@ window.onload = function () {
   size = slides[0].clientWidth;
   slide(); // Call slide() after initSlider() to ensure the initial slide is set correctly
 };
+
+// Get the heading element
+const heading = document.querySelector(".typing-heading");
+
+// Set the initial text
+const text = heading.textContent;
+let currentText = "";
+let index = 0;
+const speed = 100; // Typing speed in milliseconds
+
+// Function to start the typing animation
+function typeWriter() {
+  if (index < text.length) {
+    currentText += text.charAt(index);
+    heading.textContent = currentText;
+    index++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+// Start the typing animation
+typeWriter();
